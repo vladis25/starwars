@@ -3,7 +3,7 @@ h1{
 }
 h1 img{
     width: 50%;
-    filter: drop-shadow(1px 1px 5px rgb(250, 220,50));
+    filter: drop-shadow(1px 1px 5px rgb(255, 209, 3));
 }
 .content{
     margin: 15px 30px;
@@ -31,9 +31,21 @@ h1 img{
 }
 .number_page{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 15px 30px;
     visibility: hidden;
+}
+.breadcrumb{
+    display: flex;
+    justify-content: start;
+    margin: 15px 30px;
+    font-family: monospace;
+    letter-spacing: 0.4em;
+    size: 18px;
+}
+a{
+   
+    text-decoration: none;
 }
 .visible{
     visibility: visible;
@@ -79,4 +91,18 @@ ul.card-text li{
 }
 ul.card-text li span:first-child{
     color:#1ba2f6;
+}
+.home-list{
+    text-align: center;
+    grid-template-columns: 30% 30% 30% ;
+    margin-bottom: 200px;
+
+}
+.home-list img{
+    margin: 10px;
+    width: 30%;
+    cursor: pointer;
+}
+.home-list img:hover{
+    border: 2px solid rgb(255, 209, 3);
 }
